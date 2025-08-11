@@ -17,3 +17,4 @@ def prompt_template(parser: PydanticOutputParser) -> ChatPromptTemplate:
             ("placeholder", "{agent_scratchpad}"),
         ]
     ).partial(format_instructions=PydanticOutputParser.get_format_instructions())
+ 
